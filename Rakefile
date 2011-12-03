@@ -10,7 +10,7 @@ $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 
 task :gem => :build
 task :build do
-  system "gem build concurrently.gemspec"
+  system "gem build duke.gemspec"
 end
 
 task :install => :build do
