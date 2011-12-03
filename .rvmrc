@@ -1,1 +1,1 @@
-rvm use jruby@reduction
+rvm use jruby@concurrently
