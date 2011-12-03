@@ -5,7 +5,7 @@ $:.unshift lib unless $:.include?(lib)
 require "duke"
 
 Gem::Specification.new do |s|
-  s.name        = "duke"
+  s.name        = "theduke"
   s.version     = Duke::VERSION
   s.platform    = "java"
   s.authors     = ["Durran Jordan"]
