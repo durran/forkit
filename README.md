@@ -14,6 +14,8 @@ Installation
 ============
 ```ruby
 gem "theduke"
+
+require "duke" # If you just want to use it directly.
 ```
 
 Usage
