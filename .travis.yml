@@ -1,0 +1,6 @@
+rvm:
+  - jruby
+  - jruby-head
+notifications:
+  email:
+    - durran@gmail.com
