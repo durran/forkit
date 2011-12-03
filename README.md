@@ -5,12 +5,14 @@ Requirements
 
 Environment
 ===========
-JRUBY_OPTS=--1.9
-RUBYOPT="rubygems"
+- JRUBY_OPTS=--1.9
+- RUBYOPT="rubygems"
 
 Running Specs
 =============
+```ruby
 rake
+```
 
 Usage
 =====
