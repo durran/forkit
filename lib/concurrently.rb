@@ -1,6 +1,6 @@
-require "concurrent/enumerable"
-require "concurrent/iterator"
-require "concurrent/version"
+require "duke/enumerable"
+require "duke/iterator"
+require "duke/version"
 
 class Array
 
@@ -19,6 +19,6 @@ class Array
   #
   # @since 0.1.0
   def concurrently(threshold = 100000)
-    Concurrent::Enumerable.new(self, threshold)
+    Duke::Enumerable.new(self, threshold)
   end
 end

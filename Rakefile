@@ -4,7 +4,7 @@ Bundler.setup
 require "rake"
 require "rspec"
 require "rspec/core/rake_task"
-require "concurrent/version"
+require "duke/version"
 
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 
@@ -14,13 +14,13 @@ task :build do
 end
 
 task :install => :build do
-  system "sudo gem install concurrently-#{Concurrent::VERSION}.gem"
+  system "sudo gem install duke-#{Duke::VERSION}.gem"
 end
 
 task :release => :build do
-  system "git tag -a v#{Concurrent::VERSION} -m 'Tagging #{Concurrent::VERSION}'"
+  system "git tag -a v#{Duke::VERSION} -m 'Tagging #{Duke::VERSION}'"
   system "git push --tags"
-  system "gem push concurrently-#{Concurrent::VERSION}-java.gem"
+  system "gem push duke-#{Duke::VERSION}-java.gem"
 end
 
 RSpec::Core::RakeTask.new("spec") do |spec|

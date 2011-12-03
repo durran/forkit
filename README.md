@@ -1,3 +1,5 @@
+"Duke", "Duke of York", "Fork"...
+
 Requirements
 ============
 - JRuby 1.6.5 +
@@ -5,7 +7,7 @@ Requirements
 
 Environment
 ===========
-- JRUBY_OPTS=--1.9 --server -Xinvokedynamic.constants=true
+- JRUBY_OPTS="--1.9 --server -Xinvokedynamic.constants=true"
 - RUBYOPT="rubygems"
 
 Running Specs
