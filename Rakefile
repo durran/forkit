@@ -7,7 +7,6 @@ require "rspec/core/rake_task"
 
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 
-VERSION = "0.1.0"
 
 task :gem => :build
 task :build do
@@ -15,13 +14,13 @@ task :build do
 end
 
 task :install => :build do
-  system "sudo gem install concurrently-#{VERSION}.gem"
+  system "sudo gem install concurrently-#{Concurrent::VERSION}.gem"
 end
 
 task :release => :build do
-  system "git tag -a v#{VERSION} -m 'Tagging #{VERSION}'"
+  system "git tag -a v#{Concurrent::VERSION} -m 'Tagging #{Concurrent::VERSION}'"
   system "git push --tags"
-  system "gem push concurrently-#{VERSION}-java.gem"
+  system "gem push concurrently-#{Concurrent::VERSION}-java.gem"
 end
 
 RSpec::Core::RakeTask.new("spec") do |spec|

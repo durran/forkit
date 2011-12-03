@@ -6,7 +6,7 @@ require "concurrently"
 
 Gem::Specification.new do |s|
   s.name        = "concurrently"
-  s.version     = "0.1.0"
+  s.version     = Concurrent::VERSION
   s.platform    = "java"
   s.authors     = ["Durran Jordan"]
   s.email       = ["durran@gmail.com"]

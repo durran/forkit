@@ -1,5 +1,6 @@
 require "concurrent/enumerable"
 require "concurrent/iterator"
+require "concurrent/version"
 
 class Array
 
