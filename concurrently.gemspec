@@ -2,6 +2,8 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
+require "concurrently"
+
 Gem::Specification.new do |s|
   s.name        = "concurrently"
   s.version     = "0.1.0"
