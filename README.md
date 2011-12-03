@@ -14,6 +14,8 @@ rake
 
 Usage
 =====
-  array.concurrently.each do |object|
-    # Code here to execute in parallel on the object.
-  end
+```ruby
+array.concurrently.each do |object|
+  # Code here to execute in parallel on the object.
+end
+```
