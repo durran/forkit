@@ -20,4 +20,8 @@ Usage
 array.concurrently.each do |object|
   # Code here to execute in parallel on the object.
 end
+
+array.concurrently(100000).each do |object|
+  # Code here to execute in parallel on the object.
+end
 ```
