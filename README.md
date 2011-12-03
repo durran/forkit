@@ -5,7 +5,7 @@ Requirements
 
 Environment
 ===========
-- JRUBY_OPTS=--1.9
+- JRUBY_OPTS=--1.9 --server -Xinvokedynamic.constants=true
 - RUBYOPT="rubygems"
 
 Running Specs
