@@ -10,10 +10,10 @@ Environment
 - JRUBY_OPTS="--1.9 --server -Xinvokedynamic.constants=true"
 - RUBYOPT="rubygems"
 
-Running Specs
-=============
+Installation
+============
 ```ruby
-rake
+gem "theduke"
 ```
 
 Usage
@@ -26,4 +26,10 @@ end
 array.concurrently(100000).each do |object|
   # Code here to execute in parallel on the object.
 end
+```
+
+Running Specs
+=============
+```ruby
+rake
 ```
