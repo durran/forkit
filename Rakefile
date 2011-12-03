@@ -4,9 +4,9 @@ Bundler.setup
 require "rake"
 require "rspec"
 require "rspec/core/rake_task"
+require "concurrent/version"
 
 $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
-
 
 task :gem => :build
 task :build do
