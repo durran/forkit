@@ -1,6 +1,8 @@
 rvm:
   - jruby
   - jruby-head
+env:
+  - JRUBY_OPTS=--1.9
 notifications:
   email:
     - durran@gmail.com
