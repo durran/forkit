@@ -2,7 +2,7 @@ require "forkit/enumerable"
 require "forkit/iterator"
 require "forkit/version"
 
-class Array
+module Forkit
 
   # We hook into array to be able to easily handle concurrent processing of
   # each blocks.
@@ -22,3 +22,5 @@ class Array
     Forkit::Enumerable.new(self, threshold)
   end
 end
+
+::Array.send(:include, Forkit)

@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    forkit (0.1.1-java)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -20,7 +25,8 @@ PLATFORMS
   java
 
 DEPENDENCIES
-  mocha
+  forkit!
+  mocha (~> 0.9)
   rake
-  rspec
-  watchr
+  rspec (~> 2.7)
+  watchr (~> 0.6)
