@@ -1,7 +1,7 @@
 require "java"
 import java.util.concurrent.ForkJoinPool
 
-module Duke
+module Forkit
 
   # The enumerable allows for concurrent processing via JDK7's ForkJoinPool.
   class Enumerable
@@ -18,7 +18,7 @@ module Duke
     # @param [ Array<Object> ] objects The object array.
     # @param [ Integer ] threshold The single process threshold count.
     #
-    # @return [ Duke::Enumerable ] The concurrent enumerable.
+    # @return [ Forkit::Enumerable ] The concurrent enumerable.
     #
     # @since 0.1.0
     def initialize(objects, threshold)

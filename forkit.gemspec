@@ -2,11 +2,11 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
-require "duke"
+require "forkit"
 
 Gem::Specification.new do |s|
-  s.name        = "theduke"
-  s.version     = Duke::VERSION
+  s.name        = "forkit"
+  s.version     = Forkit::VERSION
   s.platform    = "java"
   s.authors     = ["Durran Jordan"]
   s.email       = ["durran@gmail.com"]

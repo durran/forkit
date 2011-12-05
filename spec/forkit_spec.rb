@@ -17,7 +17,7 @@ describe Array do
       context "when passed a threshold" do
 
         it "iterates over each of the elements" do
-          array.concurrently(10).each do |element|
+          array.forked(10).each do |element|
             element.executed
           end
         end
@@ -26,7 +26,7 @@ describe Array do
       context "when no threshold is passed" do
 
         it "iterates over each of the elements" do
-          array.concurrently.each do |element|
+          array.forked.each do |element|
             element.executed
           end
         end
@@ -36,7 +36,7 @@ describe Array do
     context "when no block is provided" do
 
       it "returns the standard enumerator" do
-        [].concurrently.each.should be_a(Enumerator)
+        [].forked.each.should be_a(Enumerator)
       end
     end
   end

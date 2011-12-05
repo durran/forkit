@@ -1,7 +1,7 @@
 require "java"
 import java.util.concurrent.RecursiveAction
 
-module Duke
+module Forkit
 
   # The iterator is a recursive action that executes in parallel on a
   # ForkJoinPool.
@@ -42,7 +42,7 @@ module Duke
     # @param [ Array<Object> ] objects The object array.
     # @param [ Integer ] threshold The single process threshold count.
     #
-    # @return [ Duke::Iterator ] The concurrent iterator.
+    # @return [ Forkit::Iterator ] The concurrent iterator.
     #
     # @since 0.1.0
     def initialize(objects, threshold, block)
