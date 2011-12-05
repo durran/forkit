@@ -1,5 +1,3 @@
-"Duke", "Duke of York", "Fork"...
-
 Requirements
 ============
 - JRuby 1.6.5 +
@@ -13,19 +11,17 @@ Environment
 Installation
 ============
 ```ruby
-gem "theduke"
-
-require "duke" # If you just want to use it directly.
+gem "forkit"
 ```
 
 Usage
 =====
 ```ruby
-array.concurrently.each do |object|
+array.forked.each do |object|
   # Code here to execute in parallel on the object.
 end
 
-array.concurrently(100000).each do |object|
+array.forked(100000).each do |object|
   # Code here to execute in parallel on the object.
 end
 ```
