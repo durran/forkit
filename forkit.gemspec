@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.platform    = "java"
   s.authors     = ["Durran Jordan"]
   s.email       = ["durran@gmail.com"]
-  s.homepage    = "http://github.com/durran/duke"
+  s.homepage    = "http://github.com/durran/forkit"
   s.summary     = "Process Array#each blocks concurrently with JDK7 ForkJoinPools."
   s.description = "Process Array#each blocks concurrently with JDK7 ForkJoinPools using JRuby."
 
