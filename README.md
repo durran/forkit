@@ -30,6 +30,7 @@ gem "forkit"
 ```
 
 In your application:
+
 ```ruby
 require "forkit"
 ```
